@@ -48,7 +48,10 @@ function atualizarPainel() {
     resultadoFaltantes.innerHTML = "Faltam " + faltantes + " figurinhas para completar o álbum.";
     if (faltantes == 1) {
         resultadoFaltantes.innerHTML =  "Falta " + faltantes + " figurinha para completar o álbum.";
-    }    
+    }
+    else if (faltantes < 0) {
+        resultadoFaltantes.innerHTML = "Dados inválidos!";
+    }
 
     resultadoRepetidas.innerHTML = "Você tem " + repetidas + " figurinhas repetidas para trocar!";
     if (repetidas == 1) {
