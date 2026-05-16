@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador - Álbum Copa</title>
+</head>
+<body>
+    <div class="card">
+        <form>
+            <label for="total">Total de figurinhas do álbum:</label>
+            <input type="number" id="total">
+
+            <label for="coladas">Quantas você já colou?</label>
+            <input type="number" id="coladas">
+
+            <label for="repetidas">Quantas repetidas você tem?</label>
+            <input type="number" id="repetidas">
+
+            <button type="button" onclick="atualizarPainel()">Calcular Progresso</button>
+        </form>
+        <div>
+            <h2 id="resultadoMensagem"></h2>
+            <p id="resultadoProgresso"></p>
+            <p id="resultadoFaltantes"></p>
+            <p id="resultadoRepetidas"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
