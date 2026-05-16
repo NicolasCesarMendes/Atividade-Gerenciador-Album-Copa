@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e2e2d6;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Estilo do Card principal do sistema */
+.card {
+    background: white;
+    color: black;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* Organização do formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo dos Campos de entrada de dados*/
+input {
+    padding: 12px;
+    border: 2px solid #cbd5e1;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #2563eb;
+    outline: none;
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+}
+
+/* Estilo do Botão que ativa o evento */
+button {
+    margin-top: 10px;
+    padding: 14px;
+    border: none;
+    border-radius: 12px;
+    background: #2563eb;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1d4ed8;
+    transform: scale(1.03);
+}
+
+/* Estilo da Área em que os resultados são exibidos */
+.resultado {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eaf0f6;
+    border-radius: 16px;
+}
+
+/* Mensagem principal de status do álbum */
+#resultadoMensagem {
+    margin-bottom: 15px;
+    color: #0f172a;
+    font-size: 18px;
+}
+
+/* Mensagens secundárias de status do álbum */
+p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}

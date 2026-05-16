@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador - Álbum Copa</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Card Principal do site -->
     <div class="card">
         <form>
             <label for="total">Total de figurinhas do álbum:</label>
@@ -17,10 +20,13 @@
             <label for="repetidas">Quantas repetidas você tem?</label>
             <input type="number" id="repetidas">
 
+            <!-- Botão que aciona o evento -->
             <button type="button" onclick="atualizarPainel()">Calcular Progresso</button>
         </form>
-        <div>
-            <h2 id="resultadoMensagem"></h2>
+
+        <!-- Área que aparecerá os resultados -->
+        <div class="resultado">
+            <h2 id="resultadoMensagem">O resultado aparecerá aqui!</h2>
             <p id="resultadoProgresso"></p>
             <p id="resultadoFaltantes"></p>
             <p id="resultadoRepetidas"></p>
