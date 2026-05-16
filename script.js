@@ -45,12 +45,12 @@ function atualizarPainel() {
         resultadoProgresso.innerHTML = "Dados não definidos! Por favor, digite os valores necessários.";
     }
 
-    resultadoFaltantes.innerHTML = "Faltam " + faltantes + " figurinhas para completar o álbum.";
-    if (faltantes == 1) {
-        resultadoFaltantes.innerHTML =  "Falta " + faltantes + " figurinha para completar o álbum.";
-    }
-    else if (faltantes < 0) {
-        resultadoFaltantes.innerHTML = "Dados inválidos!";
+    if (faltantes < 0) {
+    resultadoFaltantes.innerHTML = "Dados inválidos!";
+    } else if (faltantes == 1) {
+    resultadoFaltantes.innerHTML = "Falta " + faltantes + " figurinha para completar o álbum.";
+    } else {
+        resultadoFaltantes.innerHTML = "Faltam " + faltantes + " figurinhas para completar o álbum.";
     }
 
     resultadoRepetidas.innerHTML = "Você tem " + repetidas + " figurinhas repetidas para trocar!";
